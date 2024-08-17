@@ -1,3 +1,8 @@
 export let buttonsList = [
-    'Pizza',"McDonald's","Coffee","Tea","Burger","KFC"
-]
+  "Pizza",
+  "McDonald's",
+  "Coffee",
+  "Tea",
+  "Burger",
+  "KFC",
+];
