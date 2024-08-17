@@ -3,38 +3,28 @@ import RestaurantCategory from './RestaurantCategory';
 import { useParams } from 'react-router-dom';
 import CardPopUp from './CardPopUp';
 import { useSelector } from 'react-redux';
+import useResDescription from '../hooks/useResDescription';
 
 
 const RestaurantDescription = () => {
 
-  let[menuData,setMenuData] = useState(null)
+
   let selector = useSelector((store)=> store.cart.cartItems)
 
   let {id} = useParams()
-  console.log(id);
+
+  let menuData = useResDescription(id)
+
   
 
  
   
 
 
-  useEffect(()=>{
-    fech()
-  },[])
-  
-  let fech = async ()=>{
-    let data = await fetch('https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.2058593&lng=72.86612&restaurantId='+id+'&catalog_qa=undefined&submitAction=ENTER')
-
-    let json = await data.json()
-    setMenuData(json.data.cards)
-
- 
-    
-  }
 
   if(!menuData) return
 
-  console.log(menuData);
+   console.log(menuData);
 
   const {
     
