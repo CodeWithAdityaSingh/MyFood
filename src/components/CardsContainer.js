@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import Cards from './Cards'
-import { useDispatch } from 'react-redux'
-import { addFilterinfo, addResInfo } from '../utils/ResDataSlice'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import useCardContainer from '../hooks/useCardContainer'
