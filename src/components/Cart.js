@@ -5,7 +5,7 @@ import { removeItems } from '../utils/cartSlice'
 
 const Cart = () => {
     let data = useSelector((store)=> store.cart.cartItems )
-    console.log(data);
+
     let dispatch = useDispatch()
     
   return !data.length ? <div className='font-bold text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'> Add Items ! Cart is Empty 📦📦</div> : (

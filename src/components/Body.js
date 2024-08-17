@@ -3,7 +3,7 @@ import LeftSideBar from "./LeftSideBar"
 import MiddleBody from "./MiddleBody"
 import appStore from "../utils/AppStore"
 import { Outlet } from "react-router-dom"
-import About from "./ResHeadInfo"
+
 
 
 let Body = ()=>{

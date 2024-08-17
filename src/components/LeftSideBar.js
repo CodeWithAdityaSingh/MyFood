@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const LeftSideBar = () => {
 
   let selector = useSelector((store)=>  store.cart.cartItems)
-  console.log(selector);
+ 
   
 
 
